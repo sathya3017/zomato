@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #phone{
+            width: 1272px;
+            height: 420px;
+            border: 2px none solid;
+            display: flex;
+            justify-content: flex-end;
+            background-image: url(../media/photos/zoo.png)
+        }
+        #top{
+            width: 1272px;
+            height: 420px;
+            border: 2px none solid;
+            display: flex;
+            justify-content: flex-end;
+            background-image: url(../media/photos/Zomato)
+        }
+        .left{
+            padding-right: 40px;
+            color: white;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        i{
+            margin-top: 20px;
+            font-size: 18px;
+            color: white;
+        }
+        #app{
+            padding-right: 590px;
+            margin-top: 20px;
+            font-size: 18px;
+            color: white;
+        }
+        #zoom{
+            position: absolute;
+            margin-right: 562px;
+            margin-top: 80px;
+            font-size: 30px;
+            font-weight:400;
+            color: white;
+        }
+        #con{
+            position: absolute;
+            margin-right: 340px;
+            margin-top: 190px;
+            color: white;
+            font: 1em sans-serif
+        }
+        #midil{
+            position: absolute;
+            width: 780px;
+            height: 50px;
+            border: 2px white solid;
+            top: 265px;
+            left: 230px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        #box{
+            position: absolute;
+            margin-top: 280px;
+            margin-right: 600px;
+        }
+        .loc{
+            font-size: 20px;
+            position: absolute;
+            top: 260px;
+            left: 245px;
+        }
+        .are{
+            font-size: 25px;
+            position: absolute;
+            top: 258px;
+            left: 483px;
+            color: rgb(80, 78, 78);
+        }
+        #text{
+            position: absolute;
+            top: 282px;
+            left: 267px;
+            color: lightslategray;
+        }
+        #line{
+            position: absolute;
+            top: 282px;
+            left: 510px;
+        }
+        #search{
+            position: absolute;
+            top: 282px;
+            left: 565px;
+            color: lightslategray;
+        }
+        .res{
+            position: absolute;
+            top: 263px;
+            left: 530px;
+            color: black;
+            color: lightslategray;
+        }
+        #bottom{
+            width: 349px;
+            height: 190px;
+            border: 1px white solid;
+            margin-top: 45px;
+            margin-left: 101px;
+            background-image: url("../media/photos/1.html.jpg");
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        #lastone{
+            width: 348px;
+            height: 80px;
+            border-top: 1px white solid;
+            border-left: 1px rgb(211, 217, 225) solid;
+            border-bottom: 1px rgb(211, 217, 225) solid;
+            border-right: 1px rgb(211, 217, 225) solid;
+            margin-left: 101px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            
+        }
+        #ord{
+            margin-left: 20px;
+            margin-top: 10px;
+            font-size: 25px;
+        }
+        #stay{
+            margin-left: 20px;
+            margin-top: 7px;
+            font-size: 20px;
+        }
+        #bottomtwo{
+            width: 350px;
+            height: 190px;
+            border-top: 1px white solid;
+            margin-left: 100px;
+            background-image: url("../media/photos/2.html.jpg");
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        #lasttwo{
+            width: 348px;
+            height: 80px;
+            border-top: 1px white solid;
+            border-left: 1px rgb(211, 217, 225) solid;
+            border-bottom: 1px rgb(211, 217, 225) solid;
+            border-right: 1px rgb(211, 217, 225) solid;
+            margin-left: 101px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        #din{
+            margin-left: 20px;
+            margin-top: 10px;
+            font-size: 25px;
+        }
+        #view{
+            margin-left: 20px;
+            margin-top: 7px;
+            font-size: 20px;
+        }
+        #bottomthree{
+            width: 350px;
+            height: 190px;
+            border: 1px white solid;
+            margin-top: 45px;
+            margin-left: 100px;
+            background-image: url("../media/photos/3.html.jpg");
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        #lastthree{
+            width: 348px;
+            height: 80px;
+            border-top: 1px white solid;
+            border-left: 1px rgb(211, 217, 225) solid;
+            border-bottom: 1px rgb(211, 217, 225) solid;
+            border-right: 1px rgb(211, 217, 225) solid;
+            margin-left: 101px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        #night{
+            margin-left: 20px;
+            margin-top: 10px;
+            font-size: 25px;
+        }
+        #outlets{
+            margin-left: 20px;
+            margin-top: 7px;
+            font-size: 20px;
+        }
+        #bottomtwo{
+            position: absolute;
+            top: 470px;
+            left: 390px;
+        }
+        #lasttwo{
+            position: absolute;
+            top: 660px;
+            left: 389px;
+        }
+        #bottomthree{
+            position: absolute;
+            top: 425px;
+            left: 780px;
+        }
+        #lastthree{
+            position: absolute;
+            top: 660px;
+            left: 780px;
+        }
+        .high-res-image{
+            height: 70px;
+            width: 310px;
+            position: absolute;
+            right: -105px;
+        }
+        img {
+  border: 3px solid none;
+  padding: 5px;
+
+}
+
+img:hover {
+  box-shadow: 0 0 5px 5px rgba(184, 180, 180, 0.5);
+}
+img.focus {
+  cursor: pointer;}
+  #main{
+            display: flex;
+            margin-left: 2px;
+            background-color: rgb(249, 243, 233);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+       .img1{
+        height: 200px;
+        margin-left: 340px;
+        margin-top: 70px;
+       }
+        #first{
+               display: inline-block;
+
+        }
+        #second{
+            display:inline-block;
+            margin-top: 40px;
+            margin-bottom: 142px;
+           text-align: left;
+           margin-left: 560px;
+           position: absolute;
+           font: 1em sans-serif
+
+
+        }
+        #explore1{
+            font-size: 80px;
+            font: 1em sans-serif;
+        }
+        option{
+            height: 150px;
+            width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="top">
+        <div><i class="fa-solid fa-mobile-screen"></i></div>
+        <div id="app">Get the App</div>
+        <div class="left">Investor Relations</div>
+        <div class="left">Add Restaurant</div>
+        <div class="left">Log in</div>
+        <div class="left">Sign up</div>
+        <div id="zoom"><img src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" class="high-res-image" alt="" role="presentation"></div>
+        <div id="con" style="font-size: 35px;">Discover the best food & drinks in Chennai</div>
+    </div>
+    <div id="midil"></div>
+    <div><i class="fa-solid fa-location-dot loc" style="color: #da495f;"></i></div>
+    <div><i class="fa-solid fa-caret-down are"></i></div>
+    <div id="text">Velachery,Ramnagar,vijayanagar</div>
+    <div id="line">|</div>
+    <div id="search">Search for Restaurant, cuisine or a dish</div>
+    <div><i class="fa-solid fa-magnifying-glass res"></i></div>
+    <div id="bottom"></div>
+    <div id="lastone">
+        <div id="ord"><p>Order online</p></div>
+        <div id="stay">Stay home and order to your doorstep</div>
+    </div>
+    <div id="bottomtwo"></div>
+    <div id="lasttwo">
+        <div id="din">Dining</div>
+        <div id="view">View the city's favourite dining venues</div>
+    </div>
+    <div id="bottomthree"></div>
+    <div id="lastthree">
+        <div id="night">Nightlife and clubs</div>
+        <div id="outlets">Explore the city's top Nightlife outlets</div>
+    </div>
+    <br><br>
+    <br><br><br><br>
+    <br>
+    <div id="col"></div>
+    <p><h1 style="font-family: sans-serif; margin-left: 100px;">Collections<b></b></h1>
+    </p>
+    <p style="font-size: 22px;margin-left: 100px;">Explore curated lists of top restaurants,cafes,pubs,and bars in chennai,based on trends<button style="color: #da495f; margin-left: 900px;margin-bottom: 0px; border: none; font-size:smaller; background-color: rgb(253, 253, 253);">All Collections in chennai🔻</button><br><br>
+        <img src="../media/photos/zomm.png" height="335px">
+    </p>
+    <br><br>
+    <br><br>
+    <br>
+    <br>
+    <img src="../media/photos/zo.png" style="height: 40px; margin-left: 90px;">
+    <br>
+    <table style="margin-left: 100px ;">
+        <tr><td><img src="../media/photos/loc/Screenshot 2024-06-30 131512.png" style="height: 80px; width: 360px;"></td><td><img src="../media/photos/loc/Screenshot 2024-06-30 131818.png"  style="height: 80px; width: 360px;"></td><td><img src="../media/photos/loc/Screenshot 2024-06-30 131838.png" style="height: 80px; width: 360px;"></td></tr>
+        <tr><td><img src="../media/photos/loc/Screenshot 2024-06-30 131852.png"  style="height: 80px; width: 360px;"></td><td><img src="../media/photos/loc/Screenshot 2024-06-30 131904.png"  style="height: 80px; width: 360px;"></td><td><img src="../media/photos/loc/Screenshot 2024-06-30 131950.png"  style="height: 80px; width: 360px;"></td></tr>
+        <tr><td><img src="../media/photos/loc/Screenshot 2024-06-30 132002.png"  style="height: 80px; width: 360px;"></td><td><img src="../media/photos/loc/Screenshot 2024-06-30 132015.png"  style="height: 80px; width: 360px;"></td><td><img src="../media/photos/loc/Screenshot 2024-06-30 132035.png" style="height: 80px; width: 360px;"></td></tr>
+    </table>
+    <br><br>
+    <div id="main">
+        <div id="first">
+            <img src="../media/photos/zoomphone.png " class="img1">
+           </div>
+           <br>
+           <div id="second">
+          
+             <table>
+                <tr><td style="font-size:40px;">Get the Zomato app</td></tr>
+                <tr></tr>
+                <tr><td style="font-size:20;"><p>We will send you a link open it on your phone dowload the app</p></td></tr>
+                <tr>
+                    <tr></tr><tr></tr>
+                    
+                     <td><input type="radio"  name="gender"><label for="">Email</label>
+                     <input type="radio"  name="gender"><label for="">Phone</label>
+                     </td>
+                 </tr>
+                 <tr></tr>
+                <tr><td><p></p></td></tr>
+
+                <tr><td><input type="password"placeholder="Email or Phone number" style="background-color:rgb(255, 255, 255);border-radius: 3px;height: 50px;width:290px;border-color:rgb(255, 255, 255);box-sizing: border-box;"></td>
+                <td><button style="background-color:rgb(234, 25, 25);border-radius: 4px;height: 50px;width:140px;border: none;margin-right:0px; color: aliceblue;">Share app link</button></td></tr>
+                <tr></tr><tr></tr>
+                
+                <tr><td style="font-weight: 100px;">download app from</td></tr>
+                <tr><td><img src="../media/photos/zooo.png" style="height: 40px; width: 236px; "></td>
+                    </tr>
+                    <tr></tr>
+             </table>  
+           </div> </div>
+           <br><br>
+           <br>
+           <br>
+           <br><br>
+           <br>
+           <div id="explore">
+            <div class="explore1" style="font-size: 40px; margin-left: 105px;">Explore option near me</div>
+            <div style="margin-left: 110px; margin-top: 10px;">
+                <select id="option" style="height: 65px; width: 1000px; border-radius: 9px;border-color: rgb(207, 207, 188);font: 1em sans-serif;font-size: large;">
+               <option>Popular cuisines near me</option>
+               </select><br><br><br>
+               <select style="height: 65px; width: 1000px; border-radius: 9px;border-color: rgb(207, 207, 188); font: 1em sans-serif;font-size: large;">
+                <option>Popular restaurant types near me</option>
+               </select><br><br><br>
+               <select style="height: 65px; width: 1000px; border-radius: 9px;border-color: rgb(207, 207, 188);font: 1em sans-serif;font-size: large;">
+                <option>Top Restaurant chains</option>
+               </select><br><br>
+            <br>
+               <select style="height: 65px; width: 1000px; border-radius: 9px;border-color: rgb(207, 207, 188);font: 1em sans-serif;font-size: large;">
+                <option>Cities We Deliver to</option>
+               </select>
+            </div>
+           </div>
+                
+            
+</body>
+</html>
